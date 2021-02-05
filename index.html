@@ -20,16 +20,17 @@
                         <input type="text" id="name" placeholder="Nombre completo" required>
                     </label>
                      <label for="user">
-                        <input type="text" id="user" placeholder="etesech" required>
+                        <input type="text" id="user" placeholder="etesech" onchange="checkEmail()" required>
+                        <i class="checked"></i>
                     </label>
                     <label for="email">
-                        <input type="email" id="email" placeholder="elpepe@gmail.com" required>
+                        <input type="email" id="email" placeholder="elpepe@gmail.com" onchange="checkEmail()" required>
                     </label>
                     <label for="pass">
                         <input type="password" id="pass" placeholder="Contraseña" required>
                     </label>
                     <label for="passx2">
-                        <input type="password" id="pass-repeat" placeholder="Confirmar contraseña" oninput="check()" required>
+                        <input type="password" id="pass-repeat" placeholder="Confirmar contraseña" required>
                     </label>
                     <p>Al registrarte, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
                     <input type="submit" id="form__submit" value="Registrarte" onclick="return validar()">
