@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login 3GeekInStore</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="./js/forms.js"></script>
+</head>
+<body>
+    <main>
+        <section class="main__signUp">
+            <div class="main__tittle">
+                <img src="./img/logo.png" class="main__logoPrincipal" alt="Logo 3GeekInStore"> 
+            </div>
+            <div class="main__form">
+                <form action="">
+                     <label for="user">
+                        <input type="text" id="userLog" placeholder="Correo o Usuario" required>
+                    </label>
+                    <label for="pass">
+                        <input type="password" id="passLog" placeholder="Contraseña" onchange="Login()" required>
+                    </label>
+                    <a href="#" class="login__recoverPass">¿Has olvidado la contraseña?</a>
+                    <input type="submit" id="form__submit" value="Login" onclick="return Login()">
+                </form>
+            </div>
+        </section>
+        <section class="main__logIn">
+             <div>
+                <p>¿No tienes una cuenta? <a href="index.html">Registrarse</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2021 3GeekInStore. Designed by <a href="#">ticojch</a></p>
+    </footer>
+</body>
+</html>

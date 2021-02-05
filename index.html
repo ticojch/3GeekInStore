@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro 3GeekInStore</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/forms.js"></script>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section class="main__signUp">
+            <div class="main__tittle">
+                <img src="./img/logo.png" class="main__logoPrincipal" alt="Logo 3GeekInStore"> 
+            </div>
+            <div class="main__form">
+                <form action="./login.html">
+                    <label for="name">
+                        <input type="text" id="name" placeholder="Nombre completo" required>
+                    </label>
+                     <label for="user">
+                        <input type="text" id="user" placeholder="etesech" required>
+                    </label>
+                    <label for="email">
+                        <input type="email" id="email" placeholder="elpepe@gmail.com" required>
+                    </label>
+                    <label for="pass">
+                        <input type="password" id="pass" placeholder="Contraseña" required>
+                    </label>
+                    <label for="passx2">
+                        <input type="password" id="pass-repeat" placeholder="Confirmar contraseña" oninput="check()" required>
+                    </label>
+                    <p>Al registrarte, aceptas nuestras Condiciones, la Política de datos y la Política de cookies.</p>
+                    <input type="submit" id="form__submit" value="Registrarte" onclick="return validar()">
+                </form>
+            </div>
+        </section>
+        <section class="main__logIn">
+             <div>
+                <p>¿Ya tienes una cuenta? <a href="./login.html">Entrar</a></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2021 3GeekInStore. Designed by <a href="#">ticojch</a></p>
+    </footer>
+</body>
+</html>
